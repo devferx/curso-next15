@@ -10,4 +10,4 @@ if (!process.env.POSTGRESQL_ENDPOINT) {
 
 const DB_NAME = "expense_tracker"
 
-export const sql = postgres(`${process.env.POSTGRESQL_ENDPOINT}/${DB_NAME}`)
+export const sql = postgres(`${process.env.DB_ENDPOINT}/${DB_NAME}`)
